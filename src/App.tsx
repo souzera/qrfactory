@@ -12,6 +12,8 @@ function App() {
 
   const [url, setUrl] = useState('google.com')
 
+  const [typeQRCode, setTypeQRCode] = useState('svg')
+
   const onFinish = (values: any) => {
     setUrl(values.url)
   }
@@ -45,11 +47,12 @@ function App() {
 
           <div className='flex flex-col justify-center gap-2 items-center p-8 rounded-xl h-auto w-auto max-sm:w-[80%] max-sm:items-start'>
             <div id="myqrcode" className='p-2'>
-              <QrCode type='svg' size={150} value={url} bgColor='#fff' />
+              {typeQRCode === 'svg' && <QrCode type='svg' size={150} value={url} bgColor='#fff' />}
+              {typeQRCode === 'png' && <QrCode size={150} value={url} bgColor='#fff' />}
             </div>
             <div className='flex gap-2'>
-              <Button onClick={downloadPng} icon={<DownloadOutlined />}>PNG</Button>
-              <Button className="bg-black font-bold" type='primary' onClick={downloadSvg} icon={<DownloadOutlined />}>SVG</Button>
+              <Button onMouseUp={() => {setTypeQRCode('png');console.log('qr code agr é png')}} onClick={downloadPng} icon={<DownloadOutlined />}>PNG</Button>
+              <Button onMouseUp={() => {setTypeQRCode('svg');console.log('qr code agr é svg')}} className="bg-black font-bold" type='primary' onClick={downloadSvg} icon={<DownloadOutlined />}>SVG</Button>
             </div>
           </div>
         </div>
