@@ -11,7 +11,7 @@ Esta é uma simples aplicação web para gerar QR Codes a partir de dados fornec
 
 ### Como Usar
 
-1. Acesse a [página da aplicação]().
+1. Acesse a [página da aplicação](https://qrfactory.vercel.app/).
 2. Insira os dados desejados no campo apropriado.
 3. Clique no botão "Gerar QR Code".
 5. Seu QR Code será exibido na tela.
@@ -25,3 +25,6 @@ Esta é uma simples aplicação web para gerar QR Codes a partir de dados fornec
 - JavaScript
 - AntD
 
+### Demonstração
+
+![Pagina inicial](https://caminho-do-seu-site.com/logo.png)
