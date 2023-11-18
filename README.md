@@ -25,6 +25,6 @@ Esta é uma simples aplicação web para gerar QR Codes a partir de dados fornec
 - JavaScript
 - AntD
 
-### Demonstração
+### Pagina Inicial
 
 ![Pagina inicial](src/assets/print.png)
