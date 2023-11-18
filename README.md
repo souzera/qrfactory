@@ -27,4 +27,4 @@ Esta é uma simples aplicação web para gerar QR Codes a partir de dados fornec
 
 ### Demonstração
 
-![Pagina inicial](https://caminho-do-seu-site.com/logo.png)
+![Pagina inicial](src/assets/print.png)
