@@ -51,8 +51,8 @@ function App() {
               {typeQRCode === 'png' && <QrCode size={150} value={url} bgColor='#fff' />}
             </div>
             <div className='flex gap-2'>
-              <Button onMouseUp={() => {setTypeQRCode('png');console.log('qr code agr é png')}} onClick={downloadPng} icon={<DownloadOutlined />}>PNG</Button>
-              <Button onMouseUp={() => {setTypeQRCode('svg');console.log('qr code agr é svg')}} className="bg-black font-bold" type='primary' onClick={downloadSvg} icon={<DownloadOutlined />}>SVG</Button>
+              <Button onMouseUp={() => {setTypeQRCode('png');}}onClick={downloadPng} icon={<DownloadOutlined />}>PNG</Button>
+              <Button onMouseUp={() => {setTypeQRCode('svg');}}className="bg-black font-bold" type='primary' onClick={downloadSvg} icon={<DownloadOutlined />}>SVG</Button>
             </div>
           </div>
         </div>
