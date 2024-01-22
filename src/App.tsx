@@ -21,8 +21,6 @@ function App() {
   }
 
   useEffect(() => {
-    console.log(url)
-    console.log(color)
   }, [url, color])
 
   return (
@@ -47,6 +45,7 @@ function App() {
                   name='color'>
                   <ColorPicker defaultValue="#000" showText disabledAlpha 
                   onChange={(value, hex) => {
+                    console.log(value.toHex())
                     setColor(hex)
                   }}/>
                 </Form.Item>
