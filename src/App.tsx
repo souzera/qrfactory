@@ -3,6 +3,7 @@ import { Button, Form, Input, ColorPicker } from "antd";
 import QrCode from "antd/es/qr-code";
 import { useEffect, useState } from "react";
 import { downloadSvg } from "./services/download-svg";
+// @ts-ignore
 import { downloadPng } from "./services/download-png";
 import { generateHighQualityQrCode } from "./services/generate-hq";
 
